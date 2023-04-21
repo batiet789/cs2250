@@ -1,0 +1,69 @@
+#MyTitle {
+    background-color: lightsalmon;
+    border: 1pt solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+.set {
+    background-color: lightblue;
+    border: 1pt solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+#MyFoot {
+    background-color: mediumpurple;
+    border: 1pt solid black;
+    margin: 10px;
+    padding: 10px;
+}
+
+li {
+    width: 75px;
+    height: 40px;
+    background-color: lightgreen;
+    border: 1pt solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+li:hover {
+    background-color: orange;
+    transition: 1s;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/* rules for desktops */
+@media only screen and (min-width: 769px) {
+    #Adiv, #Cdiv, #Ddiv {
+        float: left;
+    }
+
+    #Bdiv {
+        display: inline-block;
+    }
+}
+
+/* rules for tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    #Adiv, #Bdiv {
+        display: inline-block;
+        width: 30%;
+    }
+
+    #Cdiv, #Ddiv {
+        display: inline-block;
+        width: 30%;
+    }
+}
+
+/* rules for phones */
+@media only screen and (man-width: 480px) {
+    .set {
+        display: grid;
+    }
+}
